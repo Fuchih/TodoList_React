@@ -1,8 +1,13 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import { nanoid } from 'nanoid'
 import style from './index.module.css'
 
 export default class Header extends Component {
+  static propTypes = {
+    addTodo: PropTypes.func.isRequired
+  }
+
   handleKeyUp = (e) => {
     if (e.code !== 'Enter' || e.target.value.trim() === '') return
     const todoObj = { id: nanoid(), name: e.target.value.trim(), done: false }
