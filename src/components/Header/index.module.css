@@ -1,0 +1,12 @@
+.top {
+  text-align: center;
+}
+
+.top input {
+  display      : block;
+  width        : 95%;
+  height       : 30px;
+  margin       : -10px auto;
+  border-radius: 5px;
+  outline      : none;
+}

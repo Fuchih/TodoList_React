@@ -1,0 +1,26 @@
+.bottom {
+  display        : flex;
+  justify-content: space-between;
+  align-items    : center;
+}
+
+.clean {
+  display         : inline-block;
+  margin-right    : 25px;
+  padding         : 5px 15px;
+  border          : 0;
+  border-radius   : 3px;
+  color           : #fff;
+  background-color: darkred;
+  cursor          : pointer;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.hint {
+  margin-top: -20px;
+  padding   : 20px;
+  text-align: center;
+}
