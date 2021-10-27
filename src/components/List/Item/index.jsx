@@ -25,9 +25,15 @@ export default class Item extends Component {
     const { mouse } = this.state
 
     return (
-      <li onMouseEnter={this.mouse(true)} onMouseLeave={this.mouse(false)} style={{ backgroundColor: mouse ? '#fff' : '#ccc' }}>
-        <input onChange={this.handleCheck(id)} type="checkbox" defaultChecked={done} />
-        <span>{name}</span>
+      <li
+      onMouseEnter={this.mouse(true)}
+      onMouseLeave={this.mouse(false)}
+      style={{ backgroundColor: mouse ? '#fff' : '#ccc' }}
+      >
+        <label>
+          <input onChange={this.handleCheck(id)} type="checkbox" checked={done} />
+          <span>{name}</span>
+        </label>
         <button
           onClick={() => {
             this.handleDelete(id)
