@@ -18,10 +18,10 @@ li button {
   cursor          : pointer;
 }
 
-li:hover {
+/* li:hover {
   background-color: #fff;
 }
 
 li:hover button {
   display: block;
-}
+} */
